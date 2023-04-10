@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     HomeFragment homeFragment;
     InfoFragment infoFragment;
-    SettingFragment settingFragment;
+    DatabaseFragment databaseFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         homeFragment = new HomeFragment();
         infoFragment = new InfoFragment();
-        settingFragment = new SettingFragment();
+        databaseFragment = new DatabaseFragment();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.containers, homeFragment).commit();
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.containers, homeFragment).commit();
                         return true;
                     case R.id.setting:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.containers, settingFragment).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.containers, databaseFragment).commit();
                         return true;
                     case R.id.info:
                         getSupportFragmentManager().beginTransaction().replace(R.id.containers, infoFragment).commit();
