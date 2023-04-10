@@ -74,7 +74,8 @@
         android:layout_height="150dp"
         android:layout_margin="15dp"
         android:background="@drawable/edit_round"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
 
 
         <LinearLayout
@@ -88,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
 
-                android:text="지금 PM2.5"
+                android:text="현재 자외선 지수"
                 android:textColor="#FFFFFF"
                 android:textSize="15dp" />
 
@@ -106,45 +107,11 @@
                 android:layout_gravity="center"
 
                 android:gravity="center"
-                android:hint="PM2.5"
+                android:hint="자외선"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp" />
         </LinearLayout>
 
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-
-                android:text="지금 PM10"
-                android:textColor="#FFFFFF"
-                android:textSize="15dp" />
-
-            <ImageView
-                android:id="@+id/pm10image"
-                android:layout_width="160dp"
-                android:layout_height="80dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/smile" />
-
-            <TextView
-                android:id="@+id/pm10"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-
-                android:gravity="center"
-                android:hint="PM10"
-                android:textColor="#FFFFFF"
-                android:textSize="20dp" />
-        </LinearLayout>
 
     </LinearLayout>
 
